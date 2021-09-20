@@ -67,6 +67,7 @@
     --font-size-midi: 2.265rem;
     --font-size-mini: 1.5rem;
     --font-size-reg: 1.25rem;
+    --font-size-tiny: 0.8rem;
 
     --font-wght-bold: 700;
     --font-wght-regular: 400;
@@ -86,11 +87,12 @@
     --mb-6: 3rem;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (min-width:360px) and (max-width:768px) {
     :root {
-        --font-size-max: 2.265rem;
-        --font-size-midi: 1.5rem;
-        --font-size-mini: 1rem;
+        --mfont-size-max: 2.265rem;
+        --mfont-size-midi: 1.5rem;
+        --mfont-size-reg: 1rem;
+        --mfont-size-mini: .8rem;
     }
 }
 
@@ -116,29 +118,71 @@ button{
     font-size: var(--font-size-reg);
     font-family: var(--font-header);
     border-radius: 10px;
+    
+}
+
+.btns{
+    width: 18em;
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 .btn_large{
-    /* width: 13.7rem;
-    height: 3.75rem; */
-    padding: 0.75rem 2.5rem;
+    padding: .75rem 2.5rem;
     background: var(--yellow-color);
 }
 
-.btn_large_border{
-    /* width: 13.7rem;
-    height: 3.75rem; */
-    padding: 0.75rem 2.5rem;
+.btn_large_bd{
+    /* padding: 0rem 6rem; */
+    width: 220px;
+    height: 60px;
     border: 1px solid var(--yellow-color);
     background: none;
+    color: var(--white-color);
+}
+
+.btn_small_bd{
+    padding: 0.75rem 2rem;
+    border: 1px solid var(--yellow-color);
+    background: none;
+    color: var(--white-color);
 }
 
 .btn_small{
-    /* width: 11.25rem;
-    height: 3.75rem; */
     padding: 0.75rem 2rem;
     background: var(--yellow-color);
 }
+
+@media screen and (min-width: 360px) {
+    .btn_large{
+        padding: .75rem 2.5rem;
+        background: var(--yellow-color);
+    }
+    
+    .btn_large_bd{
+        /* padding: .75rem; */
+        /* width: 180px;
+        height: 50px; */
+        border: 1px solid var(--yellow-color);
+        background: none;
+        color: var(--yellow-color);
+    }
+    
+    .btn_small_bd{
+        padding: 0.75rem 2rem;
+        border: 1px solid var(--yellow-color);
+        background: none;
+        color: var(--yellow-color);
+    }
+    
+    .btn_small{
+        padding: 0.75rem 2rem;
+        background: var(--yellow-color);
+    }
+}
+
+
 
 /*========================================*/
 /*--------------- [_Utility] -------------*/
@@ -158,9 +202,10 @@ body{
     overflow-x: hidden;
 }
 
-.nav__logo{
+.logo__text{
     font-family: var(--font-logo);
     font-size: var(--font-size-mini);
+    color: var(--yellow-color);
 }
 
 p {
@@ -187,48 +232,33 @@ h5, h6 {
 }
 
 h1 {
-    font-size: 54px;
+    font-size: var(--font-size-max);
     line-height: 72px;
 }
 
 h2 {
-    font-size: 42px;
+    font-size: var(--font-size-midi);
     line-height: 48px;
 }
 
-h3 {
-    font-size: 28px;
+h3, h4, h5, h6 {
+    font-size: var(--font-size-mini);
     line-height: 1.25;
     letter-spacing: -.02em;
-}
-
-h4 {
-    font-size: 24px;
-    line-height: 28px;
-}
-
-h5 {
-    font-size: 18px;
-    line-height: 24px;
-}
-
-h6 {
-    font-size: 16px;
-    line-height: 26px;
 }
 
 a {
     transition: all 0.3s ease 0s;
     text-decoration: none;
     cursor: pointer;
-    color: var(--text-primary-color);
+    color: var(--text-wite-color);
 }
 
 a:hover, a:focus, a:visited {
     text-decoration: none;
-    color: var(--yellow-color);
+    color: var(--white-color);
     font-style: italic;
-    font-weight: var(--font-wght-regular);
+    font-weight: var(--font-wght-bold);
 }
 
 a:hover {
@@ -238,6 +268,7 @@ a:hover {
 
 ul li{
     list-style: none;
+    color: var(--white-color);
 }
 img {
     border: none;
@@ -280,7 +311,145 @@ span{
     max-width: 90vw;
 }
 
+.flex_wrapper{
+    margin: 0 2em;
+}
+
+@media screen and (min-width:360px) and (max-width:770px) {
+    p{
+        font-size: var(--mfont-size-mini);
+    }
+
+    h1 {
+        font-size: 42px;
+        line-height: 72px;
+    }
+
+    h2 {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    h3 {
+        font-size: 28px;
+        line-height: 1.25;
+        letter-spacing: -.02em;
+    }
+
+    h4 {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    h5 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h6 {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    ul li, button{
+        font-size: var(--mfont-size-reg);
+    }
+}
 /*========================================*/
 /*--------------- [_Header] -------------*/
 /*========================================*/
 
+.header_wrap{
+    background-color: var(--bg-primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav__logo{
+    width: 16.875rem;
+    height: 4.375rem;
+}
+
+@media screen and (min-width:360px) and (max-width:768px) {
+    .nav__logo{
+        width: 14rem;
+        height: 3rem;
+    }
+}
+
+
+/*========================================*/
+/*--------------- [_Navigation_links] -------------*/
+/*========================================*/
+.nav__menu{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav__list{
+    display: flex;
+}
+
+.nav_item{
+    padding: 10px;
+}
+
+@media screen and (min-width:360px) and (max-width:768px) {
+    .nav__menu{
+        display: none
+    }
+}
+
+/*========================================*/
+/*--------------- [_Navigation_Bars] -------------*/
+/*========================================*/
+.nav__toggle{
+    display: none;
+}
+
+@media screen and (min-width:360px) and (max-width:768px){
+    .nav__toggle{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .bar{
+        cursor: pointer;
+    }
+    .one{
+        width: 1.5rem;
+        height: 3.5px;
+        margin-top: 5px;
+        background-color: var(--yellow-color);
+    }
+
+    .two{
+        width: 2rem;
+        height: 3.5px;
+        margin-top: 5px;
+        background-color: var(--yellow-color);
+    }
+
+    .three{
+        width: 2.5rem;
+        height: 3.5px;
+        margin-top: 5px;
+        background-color: var(--yellow-color);
+    }
+}
+
+/*========================================*/
+/*--------------- [_Hero -------------*/
+/*========================================*/
+
+.hero__wrapper{
+    width: 620px;
+    background-color: var(--bg-primary-color);
+    color: var(--white-color);
+}
