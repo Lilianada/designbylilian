@@ -1,0 +1,286 @@
+/*============================================
+------------ [CSS_INDEXING_START] ----------
+============================================
+## [_Google_Fonts]
+## [_Imported_CSS_Plugins]
+## [_Root]
+## [_Reset_Styles]
+## [_Buttons]
+## [_Global]
+## [_Header]
+## [_Footer]
+## [_Form]
+## [_widget]
+## [_Home_Slider]
+## [_Section_Title]
+## [_Page_Title]
+## [_demo_style]
+## [_Section_About]
+## [_Section_Service]
+## [_Section_Single_Service]
+## [_Section_Portfolio]
+## [_Section_Project]
+## [_Section_Single_Project]
+## [_Section_Funfact]
+## [_Section_Icon_Box]
+## [_Section_News]
+## [_Section_Team]
+## [_Section_Testimonials]
+## [_Section_Pricing_Tables]
+## [_Divider]
+## [_Utility]
+==========================================
+---------- [CSS_INDEXING_END] -------------
+===========================================
+*/
+
+/*========================================*/
+/*------------ [Google_Font] -----------*/
+/*========================================*/
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:wght@300&family=PT+Serif:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+/*========================================*/
+/*------------ [_Root] -----------*/
+/*========================================*/
+:root {
+
+    --header-height: 3rem;
+
+    /* Colors */
+    --bg-primary-color: #400F7E;
+    --bg-gradient-color: #F2ECFF;
+    --text-primary-color: #141414;
+    --text-secondary-color: #FFFF;
+    --card-primary-color: #F8F8F8;
+    --card-secondary-color: #9C9C9C;
+    --white-color: #FFFF;
+    --yellow-color: #FFC368;
+    /* --color-but: #F3CB44; */
+
+    /* Font and Typography */
+    --font-header: 'PT Serif', serif;
+    --font-body: 'IBM Plex Serif', serif;
+    --font-logo: 'Satisfy', cursive;
+
+    --font-size-max: 3.375rem;
+    --font-size-midi: 2.265rem;
+    --font-size-mini: 1.5rem;
+    --font-size-reg: 1.25rem;
+
+    --font-wght-bold: 700;
+    --font-wght-regular: 400;
+    --font-wght-light: 300;
+    
+    /* Z index */
+    --z-index-fixed: 100;
+    --z-index-tooltip: 10;
+    --z-index-normal: 1;
+
+    /* Margins */
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    --mb-6: 3rem;
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        --font-size-max: 2.265rem;
+        --font-size-midi: 1.5rem;
+        --font-size-mini: 1rem;
+    }
+}
+
+/*========================================*/
+/*------------ [_Reset_Styles] -----------*/
+/*========================================*/
+*,
+::before,
+::after{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/*========================================*/
+/*--------------- [_Buttons] -------------*/
+/*========================================*/
+/*Btn Style Max*/
+button{
+    border: none;
+    font-size: var(--font-size-reg);
+    font-family: var(--font-header);
+    border-radius: 10px;
+}
+
+.btn_large{
+    /* width: 13.7rem;
+    height: 3.75rem; */
+    padding: 0.75rem 2.5rem;
+    background: var(--yellow-color);
+}
+
+.btn_large_border{
+    /* width: 13.7rem;
+    height: 3.75rem; */
+    padding: 0.75rem 2.5rem;
+    border: 1px solid var(--yellow-color);
+    background: none;
+}
+
+.btn_small{
+    /* width: 11.25rem;
+    height: 3.75rem; */
+    padding: 0.75rem 2rem;
+    background: var(--yellow-color);
+}
+
+/*========================================*/
+/*--------------- [_Utility] -------------*/
+/*========================================*/
+body{
+    width: 100vw;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+
+    font-family: var(--font-body);
+    font-size: var(--font-size-reg);
+    font-weight: var(--font-wght-light);
+    color: var(--text-primary-color);
+    background: var(--white-color);
+    line-height: 1.8;
+    overflow-x: hidden;
+}
+
+.nav__logo{
+    font-family: var(--font-logo);
+    font-size: var(--font-size-mini);
+}
+
+p {
+    margin: 0 0 20px;
+    line-height: 1.6em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    font-family: "PT Serif", serif;
+    letter-spacing: -1.5%;
+}
+
+h1, h2 {
+    font-weight: 800;
+}
+
+h3, h4 {
+    font-weight: 700;
+}
+
+h5, h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 54px;
+    line-height: 72px;
+}
+
+h2 {
+    font-size: 42px;
+    line-height: 48px;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 1.25;
+    letter-spacing: -.02em;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 28px;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h6 {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    cursor: pointer;
+    color: var(--text-primary-color);
+}
+
+a:hover, a:focus, a:visited {
+    text-decoration: none;
+    color: var(--yellow-color);
+    font-style: italic;
+    font-weight: var(--font-wght-regular);
+}
+
+a:hover {
+    color: var(--yellow-color);
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+img {
+    border: none;
+    max-width: 100%;
+}
+
+span{
+    color: var(--yellow-color);
+}
+
+.bd-container{
+    /* max-width: 1024px; */
+    width: calc(100% - 2rem);
+    margin-left: var(--mb-2);
+    margin-right: var(--mb-2);
+}
+
+.section{
+    padding: 4rem 0 2rem;
+}
+
+.section-title,
+.section-subtitle{
+    text-align: center;
+}
+
+.section-title{
+    font-size: var(--font-bold);
+    margin-bottom: var(--mb-3);
+}
+
+.section-subtitle{
+    display: block;
+    font-size: var(--font);
+    font-weight: var(--font-semi-bold);
+}
+
+.content_wrapper{
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+/*========================================*/
+/*--------------- [_Header] -------------*/
+/*========================================*/
+
