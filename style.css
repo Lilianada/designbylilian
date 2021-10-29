@@ -418,7 +418,7 @@ span{
     justify-content: center;
     align-items: center;
     padding: .5rem;
-    background: var(--white-color);
+    background: #919aa869;
     border-radius: .5rem;
     z-index: 10;
     transition: .5s;
@@ -535,7 +535,7 @@ span{
 .social_icon{
     color: var(--white-color);
     margin-right: 2rem;
-    font-size: var(--mfont-midi);
+    font-size: var(--mfont-mini);
 }
 
 .social_icon:hover{
@@ -957,7 +957,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 }
 
 .styled-input {
-    width: 9.25rem;
+    width: 7.5rem;
     margin: 1rem 0;
     position: relative;
     border-radius: 4px;
@@ -974,15 +974,16 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
     color: var(--white-color);
     padding: 1.3rem 30px 1rem 30px;
     position: absolute;
-    top: -1px;
+    top: -3px;
     left: 0;
     -webkit-transition: all 0.25s ease;
     transition: all 0.25s ease;
     pointer-events: none;
+    font-size: var(--mfont-tiny);
 }
 
 .styled-input.wide { 
-    width: 20rem;
+    width: 16rem;
     max-width: 100%;
 }
 
@@ -1012,7 +1013,7 @@ textarea {
 }
 
 .input-container {
-    width: 20rem;
+    width: 16rem;
     max-width: 100%;
     margin: 1rem auto;
 }
@@ -1027,6 +1028,21 @@ input[type=checkbox]:checked + label {
   font-style: normal;
 }
 
+@media only screen and (min-width:390px) {
+    .input-container{
+        width: 20rem;
+    }
+
+    .styled-input.wide { 
+        width: 20rem;
+        max-width: 100%;
+    }
+
+    .styled-input {
+        width: 9.25rem;
+    }
+}
+
 @media only screen and (min-width:500px) {
     .input-container{
         width: 26rem;
@@ -1039,6 +1055,10 @@ input[type=checkbox]:checked + label {
 
     .styled-input {
         width: 12.25rem;
+    }
+
+    .styled-input label {
+        font-size: var(--font-reg);
     }
 }
 
@@ -1066,12 +1086,30 @@ input[type=checkbox]:checked + label {
 }
 
 .footer_wrap .home_social{
-    margin: .75rem 0;
+    margin: .75rem auto;
+}
+
+.footer_text p{
+    font-size: var(--mfont-tiny);
+}
+
+.footer_wrap .home_social{
+    padding: 0;
 }
 
 @media only screen and (min-width:768px) {
+    .footer_text p{
+        font-size: var(--font-reg);
+    }
+}
+
+@media only screen and (min-width:900px) {
     .footer_wrap .row{
         flex-direction: row;
         justify-content: space-around;
+    }
+
+    .footer_text p{
+        font-size: var(--font-reg);
     }
 }
