@@ -495,7 +495,7 @@ span{
 .home_wrap{
     height: 100vh;
     overflow: hidden;
-    background: url(/img/bg-1.jpg);
+    background: url(img/bg-1.jpg);
     background-position: center;
     background-size: cover;
 }
