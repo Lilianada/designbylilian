@@ -7,85 +7,279 @@
 
     <!------links------->
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+    <!-- iconfont -->
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <!--  -->
     <title>DesignbyLilian | Frontend Developer and Designer</title>
 
 </head>
 
 <body>
-    <!-- Scroll Top 
-    <a href="#" class="scrolltop" id="scroll-top">
-        <i class='bx bx-chevron-up scrolltop__icon'></i>
-    </a>-->
+    <!-- SCROLL TOP -->
+    <a href="" class="scroll_top show-scroll" id="scroll-top">
+        <i class="icofont-caret-up scrolltop_icon"></i>
+    </a>
 
-    <!-- Header -->
+    <!-------Header--------->
     <header class="header_wrap" id="header">
-        <!-- <div class="flex_wrapper"> -->
-            <div class="nav__logo">
-                <a href="#" class="logo__text">
-                    <img src="assests/img/Frame 65 svg.svg" alt="Logo" class="logo_img">
-                </a>
-           </div>
-            
-            <nav class="nav__container">
-               <div class="nav__toggle" id="nav-toggle">
-                    <div class="bar one" id="bar"></div>
-                    <div class="bar two" id="bar"></div>
-                    <div class="bar three" id="bar"></div>
-                 </div>
-    
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav_item"><a href="#home" class="nav_link active-link">Home</a></li>                       
-                        <li class="nav_item"><a href="#about" class="nav_link">About</a></li>                   
-                        <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li>
-                        <li class="nav_item"><a href="#blog" class="nav_link">Blog</a></li>             
-                    </ul>
-                    <button class="btn_large_bd">
-                        Purchase Theme <i class='bx bx-right-arrow-alt'></i>
-                    </button>    
-                </div>
-            </nav>
-        </div>
+         <!-- navigation menu -->
+        <nav class="nav_bar bd_container">
+            <a href="#" class="nav_logo">designbylily</a>
+
+            <!----------Navigation Links--------->
+            <div class="nav_menu" id="nav-menu">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="#home" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="#about" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="#services" class="nav_link">Services</a></li>
+                    <li class="nav_item"><a href="#portfolio" class="nav_link">Portfolio</a></li>
+                    <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
+                    <li class="nav_item"><a href="#contact" class="nav_link">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-------Menu bars-------->
+            <div class="nav_toggle" onclick="onClickMenu()" id="nav-toggle">
+                <div class="bar b1" id="bar1"></div>
+                <div class="bar b2" id="bar2"></div>
+                <div class="bar b3" id="bar3"></div>
+            </div>
+        </nav>
     </header>
 
-
-    <!-- <main class="l-main">
-
-        <!-- Home --
-        <section class="hero__wrapper" id="hero-wrapper">
-            <div class="hero__data content_wrapper">
-                <h1 class="hero__intro">
-                   Hello, I'm <span>Lilian Ada</span>
-                </h1>
-                <p>
-                    From the archives of a Developer,
-                    Tech enthusiast and UI lover.
-                    Get all the cheat codes and tricks
-                    to becoming a better developer and efficient designer.
-                </p>
-                <div class="btns">
-                    <button class="btn_small">
-                        About Me
-                    </button>
-                    <button class="btn_small_bd">
-                        Hire Me
-                    </button>
+    <!-------Main Content Body---------->
+    <main class="main_body ">
+        <!----------HOME SECTION------------->
+        <section class="home_wrap banner" id="home"> 
+            <div class="home_container bg_grid">
+                <div class="home_data">
+                    <h1>Hello,<br>
+                        I'm Lilian Ada <br>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "I Create.", "I Design.", "I Develop." ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <a download href="#" class="button">Download CV</a>
+                </div> 
+    
+                <!------social links------>
+                <div class="home_social">
+                    <a href="#"><i class="icofont-twitter social_icon"></i></a>
+                    <a href="#"><i class="icofont-instagram social_icon"></i></a>
+                    <a href="#"><i class="icofont-linkedin social_icon"></i></a>
+                    <a href="#"><i class="icofont-github social_icon"></i></a>
+                    <a href="#"><i class="icofont-pinterest social_icon"></i></a>
                 </div>
             </div>
         </section>
 
+        <!---------ABOUT ME SECTION------------>
+        <section class="about_wrap wrapper" id="about">
+            <div class="about_container bg_grid">
+                <div class="about_data">
+                    <div class="about_img about_bg1">
+                        <img src="Illustrations/img/potrait.jpg" alt="">
+                    </div>
+                    <div class="about_text about_bg2">
+                        <h2 class="section_title">
+                            Lilian Ada
+                        </h2>
+                        <span>
+                            <h3 class="section_subtitle">Freelance Web Developer</h3>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, distinctio 
+                            veritatis suscipit libero quia ad dolore, autem numquam sapiente alias 
+                            quisquam optio? Veritatis eum ea beatae iusto nemo placeat, perferendis 
+                            modi aliquid hic nulla numquam quae eius sit similique delectus.
+                        </p>
+                        <div class="about_info">
+                            <div class="row">
+                              <div class="col2 info"><span>Name:</span>
+                                <p>Okeke Lilian Chiagozie (Ada)</p>
+                              </div>
+                              <div class="col2 info"><span>Email:</span>
+                                <p><a href="mailto:Lilianokeke.ca@gmail.com">Lilianokeke.ca@gmail.com</a></p>
+                              </div>
+                              <div class="col2 info"><span>From:</span>
+                                <p>Nigeria</p>
+                              </div>
+                            </div>
+                        
+                            <div class="row">
+                              <div class="col2 info"><span>Age:</span>
+                                <p>21</p>
+                              </div>
+                              <div class="col2 info"><span>Phone:</span>
+                                <p>(+234)902-131-5752</p>
+                              </div>
+                              <div class="col2 info"><span>Job:</span>
+                                <p>Available</p>
+                              </div>
+                            </div>
+                        </div>
+                        <script type="text/javascript" 
+                            src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
+                            data-name="bmc-button" data-slug="Lilian.ada" data-color="#FFDD00" 
+                            data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" 
+                            data-outline-color="#000000" data-font-color="#000000" 
+                            data-coffee-color="#ffffff" >
+                    </script>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    </main> -->
+        <!----------SERVICE SECTION-------->
+        <section class="wrapper servive_wrap" id="services">
+            <div class="container bg_grid">
+                <h2 class="section_title">Services</h2>
+                <div class="row">
+                    <div class="service_col wd-90">
+                        <div class="card_col">
+                            <div class="card_img">
+                                <img src="/Illustrations/img/Work at home.png" alt="">
+                            </div>
+                            <span><h3 class="section_subtitle">Web Design</h3></span>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Pariatur beatae suscipit ipsa asperiores vero ad repudiandae repellendus sunt possimus voluptas.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="service_col wd-90">
+                        <div class="card_col">
+                            <div class="card_img">
+                                <img src="/Illustrations/img/Frame-26-2.png" alt="">
+                            </div>
+                            <span><h3 class="section_subtitle">Web Development</h3></span>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Pariatur beatae suscipit ipsa asperiores vero ad repudiandae repellendus sunt possimus voluptas.
+                            </p>
+                        </div>
+                        
+                    </div>
+                    <div class="service_col wd-90">
+                        <div class="card_col">
+                            <div class="card_img">
+                                <img src="/Illustrations/img/Work at home.png" alt="">
+                            </div>
+                            <span><h3 class="section_subtitle">Creative Writing</h3></span>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                                Pariatur beatae suscipit ipsa asperiores vero ad repudiandae repellendus sunt possimus voluptas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!---------Resume Section------------->
+        <section class="wrapper resume_wrap" id="service">
+            <div class="container bg_grid">
+                <h2 class="section_title">Resume</h2>
+                <div class="row">
+                    <div class="resume_col wd-90">
+                        <span><h3 class="section_subtitle"><i class="icofont-graduate"></i>Education</h3></span>
+                        <div class="card_row">
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><label>2019 - 2021</label></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
+                        </div>
+                        <hr class="brk-ln">
 
+                        <div class="skill_col">
+                            <span><h3 class="section_subtitle"><i class="icofont-badge"></i>Skills</h3></span>
+                            <div class="card_row">
+                                <span><label class="col_head">HTML/CSS</label></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar html">95%</div>
+                                </div>
+                            </div>
+                            <div class="card_row">
+                                <span><label class="col_head">JavaScript/React</label></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar js">65%</div>
+                                </div>
+                            </div>
+                            <div class="card_row">
+                                <span><label class="col_head">Web Design</label></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar web-d">70%</div>
+                                </div>
+                            </div>
+                            <div class="card_row">
+                                <span><label class="col_head">WordPress</label></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar word-p">90%</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="resume_col wd-90">
+                        <span><h3 class="section_subtitle"><i class="icofont-flag-alt-2"></i>Experience</h3></span>
+                        <div class="card_row">
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><label>2019 - 2021</label></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
+                        </div> 
+                        <hr class="brk-ln">
+                        <div class="card_row">
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><label>2019 - 2021</label></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
+                        </div>
+                        <hr class="brk-ln">
+                        <div class="card_row">
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><label>2019 - 2021</label></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!---------Portfolio Section--------->
+        <section class="wrapper portfolio_wrap" id="portfolio">
+            <div class="container bg_grid">
+                <h2 class="section_title">Portfolio</h2>
+                <ul class="filter_tab" id="filter-tab">
+                    <li class="tab button" data-target="all">All</li>
+                    <li class="tab button" data-target="design">Design</li>
+                    <li class="tab button" data-target="paintings">Paintings</li>
+                    <li class="tab button" data-target="unfinished">Unfinished</li>
+                </ul>
+                
+            </div>
 
+        </section>
 
-<script src="assests/script.js"></script>
+    </main>
+    
+    
+<script src="script.js"></script>
 </body>
 </html>
 
