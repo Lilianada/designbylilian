@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------links------->
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- iconfont -->
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!--  -->
+    <title>DesignedbyLilian | Frontend Developer and Designer</title>
+
+</head>
+
+<body>
+    <!-- SCROLL TOP -->
+    <a href="" class="scroll_top show-scroll" id="scroll-top">
+        <i class="icofont-caret-up scrolltop_icon"></i>
+    </a>
+
+    <!-------Header--------->
+    <header class="header_wrap" id="header">
+        <!-- navigation menu -->
+       <nav class="nav_bar bd_container">
+           <a href="#" class="nav_logo">designedbylilian</a>
+
+           <!----------Navigation Links--------->
+           <div class="nav_menu" id="nav-menu">
+               <ul class="nav_list">
+                   <li class="nav_item"><a href="/index.html" class="nav_link">Home</a></li>
+                   <li class="nav_item"><a href="/about.html" class="nav_link">About</a></li>
+                   <li class="nav_item"><a href="/portfolio.html" class="nav_link">Portfolio</a></li>
+                   <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
+                   <li class="nav_item"><a href="/shop.html" class="nav_link">Shop</a></li>
+               </ul>
+           </div>
+
+           <!-------Menu bars-------->
+           <div class="nav_toggle" onclick="onClickMenu()" id="nav-toggle">
+               <div class="bar b1" id="bar1"></div>
+               <div class="bar b2" id="bar2"></div>
+               <div class="bar b3" id="bar3"></div>
+           </div>
+       </nav>
+   </header>
+
+   <!-------Main Content Body---------->
+   <main class="main_body ">
+       <!----------HOME SECTION------------->
+       <section class="home_wrap banner" id="home"> 
+            <div class="home_container bg_grid">
+                <div class="home_data">
+                    <h1>Welcome,<br>
+                        to my about page <br>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "Everything about Me" ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <a download href="#" class="button">Download CV</a>
+                </div> 
+
+                <!------social links------>
+                <div class="home_social">
+                    <a href="#"><i class="icofont-twitter social_icon"></i></a>
+                    <a href="#"><i class="icofont-instagram social_icon"></i></a>
+                    <a href="#"><i class="icofont-linkedin social_icon"></i></a>
+                    <a href="#"><i class="icofont-github social_icon"></i></a>
+                    <a href="#"><i class="icofont-pinterest social_icon"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!---------ABOUT ME SECTION------------>
+        <section class="about_wrap wrapper about_page" id="about">
+            <div class="bg_grid">
+                <div class="data_wrap">
+                    <div class="data_bg1">
+                        <img src="img/potrait.jpg" alt="">
+                    </div>
+                    <div class="data_bg2">
+                        <h2 class="section_title">
+                            Lilian Ada
+                        </h2>
+                        <span>
+                            <h3 class="section_subtitle">Freelance Web Developer</h3>
+                        </span>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, distinctio 
+                            veritatis suscipit libero quia ad dolore, autem numquam sapiente alias 
+                            quisquam optio? Veritatis eum ea beatae iusto nemo placeat, perferendis 
+                            modi aliquid hic nulla numquam quae eius sit similique delectus.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, distinctio 
+                            veritatis suscipit libero quia ad dolore, autem numquam sapiente alias 
+                            quisquam optio.
+                        </p>
+
+
+                        <div class="about_info">
+                            <div class="row">
+                                <div class="col2 info">
+                                    <span>Email:</span>
+                                    <p><a href="mailto:Lilianokeke.ca@gmail.com">Lilianokeke.ca@gmail.com</a></p>
+                                </div>
+                            </div>
+                        
+                            <div class="row">
+                                <div class="col2 info">
+                                    <span>Phone:</span>
+                                    <p>(+234)902-131-5752</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="portfolio.html" class="button">View Portfolio</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="wrapper creative_wrap">
+            <div class="container">
+                <h2 class="section_title">Creative Process</h2>
+                <div class="row">
+                    <div class="pro_col">
+                        <div class="pro_icon">
+                         <i class="icofont-flag"></i>
+                        </div>
+                        <h3 class="section_subtitle">Imagine</h3>
+                        <div class="pro_text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                     </div>
+                     <div class="pro_col">
+                        <div class="pro_icon">
+                         <i class="icofont-flag"></i>
+                        </div>
+                        <h3 class="section_subtitle">Explore</h3>
+                        <div class="pro_text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                     </div>
+                     <div class="pro_col">
+                        <div class="pro_icon">
+                         <i class="icofont-flag"></i>
+                        </div>
+                        <h3 class="section_subtitle">Design</h3>
+                        <div class="pro_text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                     </div>
+                     <div class="pro_col">
+                        <div class="pro_icon">
+                         <i class="icofont-flag"></i>
+                        </div>
+                        <h3 class="section_subtitle">Build</h3>
+                        <div class="pro_text">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------CONTACT SECTION-------->
+        <section class="wrapper contact_wrap">
+            <div class="bg_grid">
+                <div class="data_wrap">
+                    <div class="data_bg1">
+                        <h2 class="section_title">Get In Touch</h2>
+                        <form class="contact_form">
+                                <div class="row input-container">
+                                        <div class="col_md">
+                                            <div class="styled-input wide">
+                                                <input type="text" required />
+                                                <label>Name</label> 
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="styled-input">
+                                                <input type="text" required />
+                                                <label>Email</label> 
+                                            </div>
+                                            <div class="styled-input">
+                                                <input type="text" required />
+                                                <label>Phone No</label> 
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col_md">
+                                            <div class="styled-input wide">
+                                                <textarea required></textarea>
+                                                <label>Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col_md">
+                                            <button class="button">Send Message</button>
+                                        </div>
+                                </div>
+                            
+                        </form>
+                    </div>
+                    <div class="data_bg2">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------FOOTER SECTION-------->
+        <footer class="wrapper footer_wrap">
+            <div class="container">
+                <div class="row">
+                    <h3 class="section_subtitle">designedbylilian</h3>
+                    <div class="home_social">
+                        <a href="#"><i class="icofont-twitter social_icon"></i></a>
+                        <a href="#"><i class="icofont-instagram social_icon"></i></a>
+                        <a href="#"><i class="icofont-linkedin social_icon"></i></a>
+                        <a href="#"><i class="icofont-github social_icon"></i></a>
+                        <a href="#"><i class="icofont-pinterest social_icon"></i></a>
+                    </div>
+                    <div class="footer_text">
+                        <p>
+                            © 2021 copyright DesignedbyLilian all right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>

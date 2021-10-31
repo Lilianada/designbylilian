@@ -19,112 +19,270 @@
 
 </head>
 
-<body>
-    <!-- SCROLL TOP -->
-    <a href="" class="scroll_top show-scroll" id="scroll-top">
-        <i class="icofont-caret-up scrolltop_icon"></i>
-    </a>
+ <!-- SCROLL TOP -->
+ <a href="" class="scroll_top show-scroll" id="scroll-top">
+    <i class="icofont-caret-up scrolltop_icon"></i>
+</a>
 
-    <!-- <Header></Header>
-    <div class="hero"></div> -->
-        
+<!-------Header--------->
+<header class="header_wrap" id="header">
+    <!-- navigation menu -->
+   <nav class="nav_bar bd_container">
+       <a href="#" class="nav_logo">designedbylilian</a>
 
-    <!---------Resume Section------------->
-    <section class="wrapper resume_wrap" id="service">
-        <div class="container bg_grid">
-            <h2 class="section_title">Resume</h2>
-            <div class="row">
-                <div class="resume_col wd-90">
-                    <span><h3 class="section_subtitle"><i class="icofont-graduate"></i>Education</h3></span>
-                    <div class="card_row">
-                        <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                        <span><label>2019 - 2021</label></span>
-                        <p class="card_text mg-t">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Cappacino pele rell adieu.
-                        </p>
+       <!----------Navigation Links--------->
+       <div class="nav_menu" id="nav-menu">
+           <ul class="nav_list">
+               <li class="nav_item"><a href="/index.html" class="nav_link">Home</a></li>
+               <li class="nav_item"><a href="/about.html" class="nav_link">About</a></li>
+               <li class="nav_item"><a href="/portfolio.html" class="nav_link">Portfolio</a></li>
+               <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
+               <li class="nav_item"><a href="/shop.html" class="nav_link">Shop</a></li>
+           </ul>
+       </div>
+
+       <!-------Menu bars-------->
+       <div class="nav_toggle" onclick="onClickMenu()" id="nav-toggle">
+           <div class="bar b1" id="bar1"></div>
+           <div class="bar b2" id="bar2"></div>
+           <div class="bar b3" id="bar3"></div>
+       </div>
+   </nav>
+</header>
+
+<!-------Main Content Body---------->
+    <main class="main_body ">
+    <!----------HOME SECTION------------->
+    <section class="home_wrap banner" id="home"> 
+            <div class="home_container bg_grid">
+                <div class="home_data">
+                    <h1>Welcome,<br>
+                        to my Portfolio page <br>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "Everything about Me" ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <a download href="#" class="button">Download CV</a>
+                </div> 
+
+                <!------social links------>
+                <div class="home_social">
+                    <a href="#"><i class="icofont-twitter social_icon"></i></a>
+                    <a href="#"><i class="icofont-instagram social_icon"></i></a>
+                    <a href="#"><i class="icofont-linkedin social_icon"></i></a>
+                    <a href="#"><i class="icofont-github social_icon"></i></a>
+                    <a href="#"><i class="icofont-pinterest social_icon"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!---------Resume Section------------->
+        <section class="wrapper resume_wrap" id="service">
+            <div class="container bg_grid">
+                <h2 class="section_title">Resume</h2>
+                <div class="row">
+                    <div class="resume_col wd-90">
+                        <span><h3 class="section_subtitle"><i class="icofont-graduate"></i>Education</h3></span>
+                        <div class="card_row">
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><p>2019 - 2021</p></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
+                        </div>
+                        <hr class="brk-ln">
+
+                        <div class="skill_col">
+                            <span><h3 class="section_subtitle"><i class="icofont-badge"></i>Skills</h3></span>
+                            <div class="card_row">
+                                <span><p class="col_head">HTML/CSS</p></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar html">95%</div>
+                                </div>
+                            </div>
+                            <div class="card_row">
+                                <span><p class="col_head">JavaScript/React</p></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar js">65%</div>
+                                </div>
+                            </div>
+                            <div class="card_row">
+                                <span><p class="col_head">Web Design</p></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar web-d">70%</div>
+                                </div>
+                            </div>
+                            <div class="card_row">
+                                <span><p class="col_head">WordPress</p></span>
+                                <div class="progress_container">
+                                    <div class="progress_bar word-p">90%</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <hr class="brk-ln">
 
-                    <div class="skill_col">
-                        <span><h3 class="section_subtitle"><i class="icofont-badge"></i>Skills</h3></span>
+                    <div class="resume_col wd-90">
+                        <span><h3 class="section_subtitle"><i class="icofont-flag-alt-2"></i>Experience</h3></span>
                         <div class="card_row">
-                            <span><label class="col_head">HTML/CSS</label></span>
-                            <div class="progress_container">
-                                <div class="progress_bar html">95%</div>
-                            </div>
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><p>2019 - 2021</p></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
+                        </div> 
+                        <hr class="brk-ln">
+                        <div class="card_row">
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><p>2019 - 2021</p></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
                         </div>
+                        <hr class="brk-ln">
                         <div class="card_row">
-                            <span><label class="col_head">JavaScript/React</label></span>
-                            <div class="progress_container">
-                                <div class="progress_bar js">65%</div>
-                            </div>
-                        </div>
-                        <div class="card_row">
-                            <span><label class="col_head">Web Design</label></span>
-                            <div class="progress_container">
-                                <div class="progress_bar web-d">70%</div>
-                            </div>
-                        </div>
-                        <div class="card_row">
-                            <span><label class="col_head">WordPress</label></span>
-                            <div class="progress_container">
-                                <div class="progress_bar word-p">90%</div>
-                            </div>
+                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
+                            <span><p>2019 - 2021</p></span>
+                            <p class="card_text mg-t">
+                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                Cappacino pele rell adieu.
+                            </p>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
 
-                <div class="resume_col wd-90">
-                    <span><h3 class="section_subtitle"><i class="icofont-flag-alt-2"></i>Experience</h3></span>
-                    <div class="card_row">
-                        <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                        <span><label>2019 - 2021</label></span>
-                        <p class="card_text mg-t">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Cappacino pele rell adieu.
-                        </p>
-                    </div> 
-                    <hr class="brk-ln">
-                    <div class="card_row">
-                        <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                        <span><label>2019 - 2021</label></span>
-                        <p class="card_text mg-t">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Cappacino pele rell adieu.
-                        </p>
+        <!---------Portfolio Section--------->
+        <section class="wrapper portfolio_wrap" id="portfolio">
+            <div class="container bg_grid">
+                <h2 class="section_title">Portfolio</h2>
+
+                <ul class="filter_tab"> 
+                    <li class="tab button" id="all" onclick="showAll()">All Projects</li>
+                    <li class="tab button" onclick="showCategory('category-2')">UI Design</li>
+                    <li class="tab button" onclick="showCategory('category-3')">Web Project</li>
+                    <li class="tab button" onclick="showCategory('category-3')">Unfinished</li>
+                </ul>
+                <div class="grid_container">
+                    <a href="#" class="item category-1">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/potrait.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-2">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/ringgirl.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-3">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/potrait.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-1">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/ringgirl.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-2">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/potrait.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-3">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/ringgirl.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-2">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/potrait.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-1">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/ringgirl.jpg" alt="">
+                    </a>
+                    <a href="#" class="item category-3">
+                        <h3 class="section_subtitle">UI Design</h3>
+                        <span><p class="tiny_text">Ingressive For Good</p></span>
+                        <img class="filter_img" src="img/potrait.jpg" alt="">
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <!----------CONTACT SECTION-------->
+        <section class="wrapper contact_wrap">
+            <div class="bg_grid">
+                <div class="data_wrap">
+                    <div class="data_bg1">
+                        <h2 class="section_title">Get In Touch</h2>
+                        <form class="contact_form">
+                                <div class="row input-container">
+                                        <div class="col_md">
+                                            <div class="styled-input wide">
+                                                <input type="text" required />
+                                                <label>Name</label> 
+                                            </div>
+                                        </div>
+                                        <div class="flex">
+                                            <div class="styled-input">
+                                                <input type="text" required />
+                                                <label>Email</label> 
+                                            </div>
+                                            <div class="styled-input">
+                                                <input type="text" required />
+                                                <label>Phone No</label> 
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col_md">
+                                            <div class="styled-input wide">
+                                                <textarea required></textarea>
+                                                <label>Message</label>
+                                            </div>
+                                        </div>
+                                        <div class="col_md">
+                                            <button class="button">Send Message</button>
+                                        </div>
+                                </div>
+                            
+                        </form>
                     </div>
-                    <hr class="brk-ln">
-                    <div class="card_row">
-                        <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                        <span><label>2019 - 2021</label></span>
-                        <p class="card_text mg-t">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                            Cappacino pele rell adieu.
+                    <div class="data_bg2">
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------FOOTER SECTION-------->
+        <footer class="wrapper footer_wrap">
+            <div class="container">
+                <div class="row">
+                    <h3 class="section_subtitle">designedbylilian</h3>
+                    <div class="home_social">
+                        <a href="#"><i class="icofont-twitter social_icon"></i></a>
+                        <a href="#"><i class="icofont-instagram social_icon"></i></a>
+                        <a href="#"><i class="icofont-linkedin social_icon"></i></a>
+                        <a href="#"><i class="icofont-github social_icon"></i></a>
+                        <a href="#"><i class="icofont-pinterest social_icon"></i></a>
+                    </div>
+                    <div class="footer_text">
+                        <p>
+                            © 2021 copyright DesignedbyLilian all right reserved
                         </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!---------Portfolio Section--------->
-    <section class="wrapper portfolio_wrap" id="portfolio">
-        <div class="container bg_grid">
-            <h2 class="section_title">Portfolio</h2>
-            <ul class="filter_tab" id="filter-tab">
-                <li class="tab button" data-target="all">All</li>
-                <li class="tab button" data-target="design">Design</li>
-                <li class="tab button" data-target="paintings">Paintings</li>
-                <li class="tab button" data-target="unfinished">Unfinished</li>
-            </ul>
-            
-        </div>
-
-    </section>
-
-<!-- <div class="contact"></div>
-<footer></footer> -->
-
+        </footer>
+    </main>
 <script src="script.js"></script>
 </body>
+
