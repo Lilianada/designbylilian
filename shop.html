@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!------links------->
+    <link rel="stylesheet" href="style.css">
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- iconfont -->
+    <link rel="stylesheet" href="icofont/icofont.min.css">
+
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+    <!--  -->
+    <title>DesignedbyLilian | Frontend Developer and Designer</title>
+
+</head>
+
+<body>
+    <!-- SCROLL TOP -->
+    <a href="" class="scroll_top show-scroll" id="scroll-top">
+        <i class="icofont-caret-up scrolltop_icon"></i>
+    </a>
+
+    <!-------Header--------->
+    <header class="header_wrap" id="header">
+        <!-- navigation menu -->
+       <nav class="nav_bar bd_container">
+           <a href="#" class="nav_logo">designedbylilian</a>
+
+           <!----------Navigation Links--------->
+           <div class="nav_menu" id="nav-menu">
+               <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
+                    <li class="nav_item"><a href="portfolio.html" class="nav_link">Portfolio</a></li>
+                    <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
+                    <li class="nav_item"><a href="shop.html" class="nav_link">Shop</a></li>
+               </ul>
+           </div>
+
+           <!-------Menu bars-------->
+           <div class="nav_toggle" onclick="onClickMenu()" id="nav-toggle">
+               <div class="bar b1" id="bar1"></div>
+               <div class="bar b2" id="bar2"></div>
+               <div class="bar b3" id="bar3"></div>
+           </div>
+       </nav>
+   </header>
+
+   <!-------Main Content Body---------->
+   <main class="main_body ">
+       <!----------HOME SECTION------------->
+       <section class="home_wrap banner" id="home"> 
+            <div class="home_container bg_grid">
+                <div class="home_data">
+                    <h1>Welcome<br>
+                        to my Shop <br>
+                        <a href="" class="typewrite" data-period="2000" data-type='[ "Coming Soon!" ]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </h1>
+                    <a download href="#" class="button">Download CV</a>
+                </div> 
+
+                <!------social links------>
+                <div class="home_social">
+                    <a href="#"><i class="icofont-twitter social_icon"></i></a>
+                    <a href="#"><i class="icofont-instagram social_icon"></i></a>
+                    <a href="#"><i class="icofont-linkedin social_icon"></i></a>
+                    <a href="#"><i class="icofont-github social_icon"></i></a>
+                    <a href="#"><i class="icofont-pinterest social_icon"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!----------FOOTER SECTION-------->
+        <footer class="wrapper footer_wrap">
+            <div class="container">
+                <div class="row">
+                    <h3 class="section_subtitle">designedbylilian</h3>
+                    <div class="home_social">
+                        <a href="#"><i class="icofont-twitter social_icon"></i></a>
+                        <a href="#"><i class="icofont-instagram social_icon"></i></a>
+                        <a href="#"><i class="icofont-linkedin social_icon"></i></a>
+                        <a href="#"><i class="icofont-github social_icon"></i></a>
+                        <a href="#"><i class="icofont-pinterest social_icon"></i></a>
+                    </div>
+                    <div class="footer_text">
+                        <p>
+                            © 2021 copyright DesignedbyLilian all right reserved
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+<script src="script.js"></script>
+</body>

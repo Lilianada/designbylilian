@@ -1358,7 +1358,38 @@ input[type=checkbox]:checked + label {
 .pro_col p{
     text-align: center;
 }
-<<<<<<< HEAD
+
+
+/*========================================*/
+/*--------------- [_Main Blog Post Style] -------------*/ 
+.post_col{
+    width: 33.33%;
+    border-radius: 5px;
+}
+
+.post_img{
+    height: 20rem;
+    background: url(img/ringgirl.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 
   @keyframes fade-in-bottom {
@@ -1387,5 +1418,3 @@ input[type=checkbox]:checked + label {
     animation: fade-in-bottom 1s ease-in-out both;
   }
    */
-=======
->>>>>>> a59203e5ae0a64a87adc2f0f5fa54c02668c4b1d
