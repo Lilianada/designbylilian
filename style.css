@@ -1358,6 +1358,7 @@ input[type=checkbox]:checked + label {
 .pro_col p{
     text-align: center;
 }
+<<<<<<< HEAD
 
 /* 
   @keyframes fade-in-bottom {
@@ -1386,3 +1387,5 @@ input[type=checkbox]:checked + label {
     animation: fade-in-bottom 1s ease-in-out both;
   }
    */
+=======
+>>>>>>> a59203e5ae0a64a87adc2f0f5fa54c02668c4b1d
