@@ -150,6 +150,8 @@ h4, h5, h6 {
 
 a {
   text-decoration: none;
+  color: inherit;
+  font-family: Raleway;
 }
 
 ul li{
@@ -289,7 +291,7 @@ span{
 .nav_menu{
     position: fixed;
     right: 0;
-    top: 1px;
+    top: 1px; 
     left: -470px;
     width: 60%;
     height: 100vh;
@@ -299,8 +301,8 @@ span{
     background: var(--bg-primary-color);
     transition: .5s;
     box-shadow: 0 2px 4px rgb(0, 0, 0, .1);
-    border-radius: 0 0 1rem 1rem;
-    z-index: 0;
+    /* border-radius: 0 0 1rem 1rem; */
+    z-index: 5;
 }
 
 .nav_item{
@@ -366,7 +368,7 @@ span{
 
 /* MENU BARS END */
 
-.nav_toggle.bar:hover{
+.active, .nav_toggle.bar:hover{
     color: var(--text-secondary-color);
 }
 
@@ -382,22 +384,6 @@ span{
 .show-menu{
     left: -1px;
 }
-
-
-/* active menu */
-/* .active-link{
-    position: relative;
-}
-
-.active-link::after{
-    content: '';
-    position: absolute;
-    bottom: -.7rem;
-    left: 0;
-    width: 85%;
-    height: 3px;
-    background: var(--text-secondary-color) ;
-} */
 
 /* Scroll Header */
 .scroll-header .nav_bar{
@@ -498,7 +484,7 @@ span{
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-    background: url(img/bg-1.jpg);
+    background: url(img/Flipped\ \(2\).jpg);
     background-position: center;
     background-size: cover;
 }
@@ -559,7 +545,7 @@ span{
 /*========================================*/
 /*--------------- [_About] -------------*/
 .data_wrap{
-    padding: 3rem 1rem;
+    padding: 3rem 2rem;
 }
 
 .data_wrap{
@@ -578,7 +564,7 @@ span{
     height: fit-content;
     background-position: center;
     margin: 2em 0;
-    z-index: 100;
+    z-index: 3;
 }
 
 .data_bg2{
@@ -632,6 +618,10 @@ span{
     .about_info .row{
         width: 50%;
     }
+
+    .about_page .data_bg2{
+        padding: 3rem 1rem 2rem 1rem;
+    }
 }
 
 @media screen and (min-width: 900px) {
@@ -664,7 +654,7 @@ span{
     }
 
     .about_page .data_bg2{
-        padding: 10rem 2rem 2rem 6rem;
+        padding: 3rem 0rem 2rem 2rem;
     }
 
 
@@ -1068,6 +1058,10 @@ span{
     overflow: hidden;
     padding: 1rem;
 }
+.contact_wrap .data_wrap{
+    flex-direction: column-reverse;
+}
+
 .data_bg1 .section_title{
     margin-left: 2rem;
     margin-top: 2rem;

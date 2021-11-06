@@ -26,30 +26,7 @@
     </a>
 
     <!-------Header--------->
-    <header class="header_wrap" id="header">
-         <!-- navigation menu -->
-        <nav class="nav_bar bd_container">
-            <a href="#" class="nav_logo">designedbylilian</a>
-
-            <!----------Navigation Links--------->
-            <div class="nav_menu" id="nav-menu">
-                <ul class="nav_list">
-                        <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
-               <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
-               <li class="nav_item"><a href="portfolio.html" class="nav_link">Portfolio</a></li>
-               <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
-               <li class="nav_item"><a href="shop.html" class="nav_link">Shop</a></li>
-                </ul>
-            </div>
-
-            <!-------Menu bars-------->
-            <div class="nav_toggle" onclick="onClickMenu()" id="nav-toggle">
-                <div class="bar b1" id="bar1"></div>
-                <div class="bar b2" id="bar2"></div>
-                <div class="bar b3" id="bar3"></div>
-            </div>
-        </nav>
-    </header>
+    <my-header></my-header>
 
     <!-------Main Content Body---------->
     <main class="main_body ">
@@ -68,11 +45,11 @@
     
                 <!------social links------>
                 <div class="home_social">
-                    <a href="#"><i class="icofont-twitter social_icon"></i></a>
-                    <a href="#"><i class="icofont-instagram social_icon"></i></a>
-                    <a href="#"><i class="icofont-linkedin social_icon"></i></a>
-                    <a href="#"><i class="icofont-github social_icon"></i></a>
-                    <a href="#"><i class="icofont-pinterest social_icon"></i></a>
+                    <a href="www.twitter.com/_ozie/"><i class="icofont-twitter social_icon"></i></a>
+                    <a href="www.instagram.com/confusedcr8ive"><i class="icofont-instagram social_icon"></i></a>
+                    <a href="www.linkedin.com/in/lilian-ada-793033135/"><i class="icofont-linkedin social_icon"></i></a>
+                    <a href="www.github.com/lilianada"><i class="icofont-github social_icon"></i></a>
+                    <a href="www.pinterest.com/"><i class="icofont-pinterest social_icon"></i></a>
                 </div>
             </div>
         </section>
@@ -82,7 +59,7 @@
             <div class="bg_grid">
                 <div class="data_wrap">
                     <div class="data_bg1">
-                        <img src="img/potrait.jpg" alt="">
+                        <img src="img/smileLilian.jpg" alt="">
                     </div>
                     <div class="data_bg2">
                         <h2 class="section_title">
@@ -92,10 +69,13 @@
                             <h3 class="section_subtitle">Freelance Web Developer</h3>
                         </span>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, distinctio 
-                            veritatis suscipit libero quia ad dolore, autem numquam sapiente alias 
-                            quisquam optio? Veritatis eum ea beatae iusto nemo placeat, perferendis 
-                            modi aliquid hic nulla numquam quae eius sit similique delectus.
+                            Hello there, my name is Lilian Ada, a Frontend Developer and Writer. 
+                            I recently made a transition into tech, it has been fun, challenging and 
+                            has helped me use a larger percentage of my brain.
+                            I enjoy using Css and building user interface components so much that I 
+                            feel like I'm not doing enough but what's the rush, there's still time to 
+                            do more. To get to know more about me, you should really head to my about page. 
+                            There's more you don't know about me yet.
                         </p>
                         <div class="about_info">
                             <div class="row">
@@ -122,13 +102,9 @@
                               </div>
                             </div>
                         </div>
-                        <script type="text/javascript" 
-                            src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" 
-                            data-name="bmc-button" data-slug="Lilian.ada" data-color="#FFDD00" 
-                            data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" 
-                            data-outline-color="#000000" data-font-color="#000000" 
-                            data-coffee-color="#ffffff" >
-                    </script>
+                        <button class="button">
+                            <a href="about.html">More about me</a>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -144,10 +120,10 @@
                             <div class="card_img">
                                 <img src="img/Work at home.png" alt="">
                             </div>
-                            <span><h3 class="section_subtitle">Web Design</h3></span>
+                            <span><h3 class="section_subtitle">Web Development</h3></span>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Pariatur beatae suscipit ipsa asperiores vero ad repudian.
+                                I build accessible & responsive websites with pixel perfect implementation of UI designs.
+                                
                             </p>
                         </div>
                     </div>
@@ -157,10 +133,9 @@
                             <div class="card_img">
                                 <img src="img/Frame-26-2.png" alt="">
                             </div>
-                            <span><h3 class="section_subtitle">Web Development</h3></span>
+                            <span><h3 class="section_subtitle">Web Design</h3></span>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Pariatur beatae suscipit ipsa asperiores vero ad repudian.
+                                I design clean user interfaces with user's experience and interactivity in mind.
                             </p>
                         </div>
                         
@@ -172,8 +147,7 @@
                             </div>
                             <span><h3 class="section_subtitle">Creative Writing</h3></span>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
-                                Pariatur beatae suscipit ipsa asperiores vero ad repudian.
+                                I create and publish unique pieces of articles based off of topics I find interesting.
                             </p>
                         </div>
                     </div>
@@ -189,11 +163,11 @@
                     <a href="#" class="service_col wd-20">
                         <div class="card_col single_post">
                             <div class="blog_img">
-                                <img class="img_top" src="img/ringgirl.jpg" alt="">
+                                <img class="img_top" src="http://exill.dk/demo/kitzu/template/img/item-6.jpg" alt="">
                                 <span class="content_date">12 Aug, 20</span>
                             </div>
                             <div class="blog_text">
-                                <h3 class="section_subtitle">How to kill a Mosquito with VsCode</h3>
+                                <h3 class="section_subtitle">Lorem ipsum dolor sit amet.</h3>
                                 <p>
                                     Illo dignissimos ex, totam sint doloribus nobis incidunt quidem voluptas, et ea 
                                     autem! Nulla, fugit.
@@ -204,11 +178,11 @@
                     <a href="#" class="service_col wd-20">
                         <div class="card_col single_post">
                             <div class="blog_img">
-                                <img class="img_top" src="img/ringgirl.jpg" alt="">
+                                <img class="img_top" src="http://exill.dk/demo/kitzu/template/img/item-6.jpg" alt="">
                                 <span class="content_date">12 Aug, 20</span>
                             </div>
                             <div class="blog_text">
-                                <h3 class="section_subtitle">How to kill a Mosquito with VsCode</h3>
+                                <h3 class="section_subtitle">Lorem ipsum dolor sit amet.</h3>
                                 <p>
                                     Illo dignissimos ex, totam sint doloribus nobis incidunt quidem voluptas, et ea 
                                     autem! Nulla, fugit.
@@ -219,11 +193,11 @@
                     <a href="#" class="service_col wd-20">
                         <div class="card_col single_post">
                             <div class="blog_img">
-                                <img class="img_top" src="img/ringgirl.jpg" alt="">
+                                <img class="img_top" src="http://exill.dk/demo/kitzu/template/img/item-6.jpg" alt="">
                                 <span class="content_date">12 Aug, 20</span>
                             </div>
                             <div class="blog_text">
-                                <h3 class="section_subtitle">How to kill a Mosquito with VsCode</h3>
+                                <h3 class="section_subtitle">Lorem ipsum dolor sit amet.</h3>
                                 <p>
                                     Illo dignissimos ex, totam sint doloribus nobis incidunt quidem voluptas, et ea 
                                     autem! Nulla, fugit.
@@ -236,74 +210,14 @@
         </section>
         
         <!----------CONTACT SECTION-------->
-        <section class="wrapper contact_wrap">
-            <div class="wrapper">
-                <div class="data_wrap">
-                    <div class="data_bg1">
-                        <h2 class="section_title">Get In Touch</h2>
-                        <form class="contact_form" method="post" action="contact-form-process.php">
-                                <div class="row input-container">
-                                        <div class="col_md">
-                                            <div class="styled-input wide">
-                                                <input type="text" required />
-                                                <label>Name</label> 
-                                            </div>
-                                        </div>
-                                        <div class="flex">
-                                            <div class="styled-input">
-                                                <input type="text" required />
-                                                <label>Email</label> 
-                                            </div>
-                                            <div class="styled-input">
-                                                <input type="text" required />
-                                                <label>Phone No</label> 
-                                            </div>
-                                        </div>
-                                        
-                                        <div class="col_md">
-                                            <div class="styled-input wide">
-                                                <textarea required></textarea>
-                                                <label>Message</label>
-                                            </div>
-                                        </div>
-                                        <div class="col_md">
-                                            <button type="submit" class="button">
-                                                <a href = "mailto: lilianokeke.ca@gmail.com?subject = Feedback&body = Message">Send Message</a>
-                                            </button>
-                                        </div>
-                                </div>
-                            
-                        </form>
-                    </div>
-                    <div class="data_bg2">
-
-                    </div>
-                </div>
-            </div>
-        </section>
+        <my-contact></my-contact>
 
         <!----------FOOTER SECTION-------->
-        <footer class="wrapper footer_wrap">
-            <div class="container">
-                <div class="row">
-                    <h3 class="section_subtitle">designedbylilian</h3>
-                    <div class="home_social">
-                        <a href="#"><i class="icofont-twitter social_icon"></i></a>
-                        <a href="#"><i class="icofont-instagram social_icon"></i></a>
-                        <a href="#"><i class="icofont-linkedin social_icon"></i></a>
-                        <a href="#"><i class="icofont-github social_icon"></i></a>
-                        <a href="#"><i class="icofont-pinterest social_icon"></i></a>
-                    </div>
-                    <div class="footer_text">
-                        <p>
-                            © 2021 copyright DesignedbyLilian all right reserved
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <my-footer></my-footer>
+
     </main>
     
+<script src="contact-form-process.php"></script>
 <script src="script.js"></script>
 </body>
 </html>

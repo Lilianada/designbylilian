@@ -25,30 +25,7 @@
 </a>
 
 <!-------Header--------->
-<header class="header_wrap" id="header">
-    <!-- navigation menu -->
-   <nav class="nav_bar bd_container">
-       <a href="#" class="nav_logo">designedbylilian</a>
-
-       <!----------Navigation Links--------->
-       <div class="nav_menu" id="nav-menu">
-           <ul class="nav_list">
-               <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
-               <li class="nav_item"><a href="about.html" class="nav_link">About</a></li>
-               <li class="nav_item"><a href="portfolio.html" class="nav_link">Portfolio</a></li>
-               <li class="nav_item"><a href="blog.html" class="nav_link">Blog</a></li>
-               <li class="nav_item"><a href="shop.html" class="nav_link">Shop</a></li>
-           </ul>
-       </div>
-
-       <!-------Menu bars-------->
-       <div class="nav_toggle" onclick="onClickMenu()" id="nav-toggle">
-           <div class="bar b1" id="bar1"></div>
-           <div class="bar b2" id="bar2"></div>
-           <div class="bar b3" id="bar3"></div>
-       </div>
-   </nav>
-</header>
+<my-header></my-header>
 
 <!-------Main Content Body---------->
     <main class="main_body ">
@@ -85,10 +62,10 @@
                         <span><h3 class="section_subtitle"><i class="icofont-graduate"></i>Education</h3></span>
                         <div class="card_row">
                             <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                            <span><p>2019 - 2021</p></span>
+                            <span><p>2017 - 2021</p></span>
                             <p class="card_text mg-t">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Cappacino pele rell adieu.
+                                Studied Early childhood and primary education and psychology
+                                in Nnamdi Azikiwe University.
                             </p>
                         </div>
                         <hr class="brk-ln">
@@ -125,29 +102,29 @@
                     <div class="resume_col wd-90">
                         <span><h3 class="section_subtitle"><i class="icofont-flag-alt-2"></i>Experience</h3></span>
                         <div class="card_row">
-                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                            <span><p>2019 - 2021</p></span>
+                            <h4 class="col_head mg-t mg-b">Ingressive For Good & Zuri Internship</h4>
+                            <span><p>March - July 2021</p></span>
                             <p class="card_text mg-t">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Cappacino pele rell adieu.
+                                Became a finalist in the first cohort of the I4G & Zuri Internship where I first made my
+                                way into tech.
                             </p>
                         </div> 
                         <hr class="brk-ln">
                         <div class="card_row">
-                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                            <span><p>2019 - 2021</p></span>
+                            <h4 class="col_head mg-t mg-b">HNG Internship cohort8</h4>
+                            <span><p>Sept- Oct 2021</p></span>
                             <p class="card_text mg-t">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Cappacino pele rell adieu.
+                                Became a finalist of the 8th cohort of HNG Internship which was concluded in 0ctober. I had the 
+                                opportunity of working alongside superb devs and building a soon to launch product.
                             </p>
                         </div>
                         <hr class="brk-ln">
                         <div class="card_row">
-                            <h4 class="col_head mg-t mg-b">Early Childhood and Primary Education</h4>
-                            <span><p>2019 - 2021</p></span>
+                            <h4 class="col_head mg-t mg-b">Zuri Chat</h4>
+                            <span><p>Sept 2021 - Present</p></span>
                             <p class="card_text mg-t">
-                                Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                                Cappacino pele rell adieu.
+                                Worked as a software developer Intern for Zuri chat, a product with really cool features that's
+                                soon to hit the market.
                             </p>
                         </div>
                     </div>
@@ -256,70 +233,13 @@
         </section>
 
         <!----------CONTACT SECTION-------->
-        <section class="wrapper contact_wrap">
-            <div class="bg_grid">
-                <div class="data_wrap">
-                    <div class="data_bg1">
-                        <h2 class="section_title">Get In Touch</h2>
-                        <form class="contact_form">
-                                <div class="row input-container">
-                                    <div class="col_md">
-                                        <div class="styled-input wide">
-                                            <input type="text" required />
-                                            <label>Name</label> 
-                                        </div>
-                                    </div>
-                                    <div class="flex">
-                                        <div class="styled-input">
-                                            <input type="text" required />
-                                            <label>Email</label> 
-                                        </div>
-                                        <div class="styled-input">
-                                            <input type="text" required />
-                                            <label>Phone No</label> 
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="col_md">
-                                        <div class="styled-input wide">
-                                            <textarea required></textarea>
-                                            <label>Message</label>
-                                        </div>
-                                    </div>
-                                    <div class="col_md">
-                                        <button class="button">Send Message</button>
-                                    </div>
-                                </div>
-                            
-                        </form>
-                    </div>
-                    <div class="data_bg2">
-                    </div>
-                </div>
-            </div>
-        </section>
+        <my-contact></my-contact>
 
         <!----------FOOTER SECTION-------->
-        <footer class="wrapper footer_wrap">
-            <div class="container">
-                <div class="row">
-                    <h3 class="section_subtitle">designedbylilian</h3>
-                    <div class="home_social">
-                        <a href="#"><i class="icofont-twitter social_icon"></i></a>
-                        <a href="#"><i class="icofont-instagram social_icon"></i></a>
-                        <a href="#"><i class="icofont-linkedin social_icon"></i></a>
-                        <a href="#"><i class="icofont-github social_icon"></i></a>
-                        <a href="#"><i class="icofont-pinterest social_icon"></i></a>
-                    </div>
-                    <div class="footer_text">
-                        <p>
-                            © 2021 copyright DesignedbyLilian all right reserved
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        <my-footer></my-footer>
     </main>
-<script src="script.js"></script>
+
+    <script src="contact-form-process.php"></script>
+    <script src="script.js"></script>
 </body>
 
