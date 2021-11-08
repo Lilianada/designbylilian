@@ -184,10 +184,10 @@ class myFooter extends HTMLElement{
                     <div class="row">
                         <h3 class="section_subtitle">designedbylilian</h3>
                         <div class="home_social">
-                            <a href="www.twitter.com/_ozie/"><i class="icofont-twitter social_icon"></i></a>
-                            <a href="www.instagram.com/confusedcr8ive"><i class="icofont-instagram social_icon"></i></a>
-                            <a href="www.linkedin.com/in/lilian-ada-793033135/"><i class="icofont-linkedin social_icon"></i></a>
-                            <a href="www.github.com/lilianada"><i class="icofont-github social_icon"></i></a>
+                            <a href="https://www.twitter.com/_ozie/"><i class="icofont-twitter social_icon"></i></a>
+                            <a href="https://www.instagram.com/confusedcr8ive"><i class="icofont-instagram social_icon"></i></a>
+                            <a href="https://www.linkedin.com/in/lilian-ada-793033135/"><i class="icofont-linkedin social_icon"></i></a>
+                            <a href="https://www.github.com/lilianada"><i class="icofont-github social_icon"></i></a>
                             <a href="#"><i class="icofont-pinterest social_icon"></i></a>
                         </div>
                         <div class="footer_text">
