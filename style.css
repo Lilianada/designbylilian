@@ -961,7 +961,7 @@ span{
         display: flex;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         width: 97%;
         margin-top: 2rem;
     }
